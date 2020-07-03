@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrito - Diego Catalan</title>
+
+    <link rel="stylesheet" href="./Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./Css/index.css" />
+
+    <script src="/JS/jquery.min.js"></script>
+    <script src=" https://unpkg.com/@popperjs/core@2/dist/umd/popper.js "></script>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/index.js"></script>
+  </head>
+  <body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <!--contenedor-->
+      <div class="container">
+        <!--Img-->
+        <img class="logo" src="./img/logo.png" alt="Tienda Diego Catalan" />
+        <!--contenedor menu y carrito--><!--adentro de container-->
+        <div class="collapse navbar-collapse">
+          <!--menu-->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./">Home</a>
+            </li>
+          </ul>
+
+          <!--carrito-->
+          <div class="cart-container">
+            <button
+              class="btn btn-secondary cart"
+              onclick="openCloseCart()"
+              type="button"
+            >
+              <img src="./img/cart.png" alt="Carrito" />
+            </button>
+            <div class="cart-products hidden">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--Products List-->
+    <div class="container product-list">
+      <div class="row products"></div>
+    </div>
+  </body>
+</html>
